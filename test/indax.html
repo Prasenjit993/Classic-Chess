@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url("i1.jpg");
+      background-size: cover;
+      /* This ensures the image covers the whole background */
+      background-position: center;
+      /* This centers the image */
+      background-repeat: no-repeat;
+    }
+
+    h1 {
+      color: #f3eded;
+      font-size: 80px;
+      color: white;
+      -webkit-text-stroke: 1px black;
+      margin-bottom: 20px;
+      /* Space between the heading and the button */
+    }
+
+    button {
+      font-size: 32px;
+      /* Increase the font size to make the button bigger */
+      padding: 20px 40px;
+      /* Increase padding for a bigger button */
+      cursor: pointer;
+      /* Add cursor pointer for better UX */
+    }
+
+    .footer {
+      background-color: #333;
+      height: 100px;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-bottom: 20px;
+      /* Space between button and footer */
+    }
+
+    .button-container button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .button-container button:hover {
+      background-color: #45a049;
+      /* Change color on hover */
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Welcome to Classic Chess</h1>
+  <div class="button-container">
+    <button onclick="location.href='index.html'">Start The Game</button>
+  </div>
+ 
+</body>
+
+</html>

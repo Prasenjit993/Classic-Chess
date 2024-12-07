@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chess</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"
+        integrity="sha512-xRllwz2gdZciIB+AkEbeq+gVhX8VB8XsfqeFbUh+SzHlN96dEduwtTuVuc2u9EROlmW9+yhRlxjif66ORpsgVA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./lib/css/chessboard-1.0.0.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <script type="text/javascript"
+        charset="utf-8"> document.addEventListener('DOMContentLoaded', function () { var socket = io.connect('http://' + document.domain + ':' + location.port); socket.on('response', function (data) { console.log(data); }); socket.send('Hello Server!'); }); </script>
+
+    <h1 style="text-align: center;">Classic Chess</h1>
+    <div class="display-flex">
+        <div id="board1" style="width: 500px"></div>
+        <div id="board-container">
+            <div id="white-info">
+                <div id="white-timer" class="timer">White: 5:00</div>
+                <div id="white-turn" class="turn">White's Turn</div>
+            </div>
+            <div id="board1" style="width: 400px"></div>
+            <div id="black-info">
+                <div id="black-timer" class="timer">Black: 5:00</div>
+                <div id="black-turn" class="turn">Black's Turn</div>
+            </div>
+        </div>
+
+
+    </div>
+
+    </div>
+    <script src="./lib/js/chessboard-1.0.0.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
